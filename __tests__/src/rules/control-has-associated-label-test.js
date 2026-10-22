@@ -346,7 +346,7 @@ ruleTester.run(`${ruleName}:select`, rule, {
     { code: '<div><label htmlFor="relationship">Relationship</label><select id="relationship"><option>Ancestors</option></select></div>' },
     { code: '<div><select id="relationship"><option>Ancestors</option></select><label htmlFor="relationship">Relationship</label></div>' },
     { code: '<div><label htmlFor={id}>Relationship</label><select id={id}>{options}</select></div>' },
-    { code: '<><select id="relationship">{options}</select><label htmlFor="relationship">Relationship</label></>', features: ['fragment'] },
+    { code: '<><select id="relationship">{options}</select><label htmlFor="relationship">Relationship</label></>', features: ['fragment', 'no-babel'] },
     { code: '<div><label htmlFor="true">Relationship</label><select id="true">{options}</select></div>' },
     { code: '<div><label htmlFor={0}>Relationship</label><select id="0">{options}</select></div>' },
     { code: '<div><label for="relationship">Relationship</label><select id="relationship">{options}</select></div>', settings: { 'jsx-a11y': { attributes: { for: ['for'] } } } },
